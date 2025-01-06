@@ -1,35 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game - Shazil Khan</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="A classic Snake game implemented in Java.">
-    <meta name="keywords" content="Snake Game, Java, Game Development">
-    <meta name="author" content="Shazil Khan">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game – Shazil Khan</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="A classic Snake game implemented in Java.">
+  <meta name="keywords" content="Snake Game, Java, Game Development">
+  <meta name="author" content="Shazil Khan">
 </head>
 <body>
 
   <!-- HEADER SECTION -->
   <header class="project-header">
     <h1>Snake Game</h1>
-    <p>A classic Snake game implemented in Java.</p>
+    <p>A modern twist on the classic Snake game, developed in Java.</p>
   </header>
 
   <!-- OVERVIEW SECTION -->
   <section id="overview">
     <h2>Overview</h2>
-    <p>This project is a classic Snake game developed using Java. Players control a snake to eat food, growing longer with each meal while avoiding collisions with walls or itself.</p>
+    <p>
+      This project is a console-based Snake game where the player navigates a snake to eat food 
+      and grow longer, avoiding collisions with walls or its own tail. Implemented in Java, the 
+      game showcases fundamental concepts such as collision detection, dynamic object spawning, 
+      and basic AI for obstacle placement.
+    </p>
+  </section>
+
+  <!-- MY ROLE & CONTRIBUTIONS SECTION (NEW) -->
+  <section id="my-role">
+    <h2>My Role & Key Contributions</h2>
+    <ul>
+      <li><strong>Game Logic & Collision Detection:</strong> Wrote the core Java code to handle 
+        movement, wall collision, and snake-body collision detection.</li>
+      <li><strong>Obstacle & Teleport Design:</strong> Developed obstacle and teleport mechanics 
+        that enhance gameplay complexity and variety.</li>
+      <li><strong>Randomized Food Placement:</strong> Implemented the logic to spawn food at 
+        random grid locations while avoiding snake positions and obstacles.</li>
+      <li><strong>Console Rendering & User Input:</strong> Managed keyboard inputs (WASD) and 
+        displayed the live game state on the console.</li>
+    </ul>
+  </section>
+
+  <!-- CHALLENGES & OUTCOMES SECTION (NEW) -->
+  <section id="challenges">
+    <h2>Challenges & Outcomes</h2>
+    <ul>
+      <li>
+        <strong>Challenge:</strong> Ensuring the snake’s body updates accurately without overwriting 
+        segments or leaving artifacts.  
+        <br><strong>Outcome:</strong> Introduced a data structure to track every snake segment’s 
+        (x, y) coordinates, allowing smooth, glitch-free movement.
+      </li>
+      <li>
+        <strong>Challenge:</strong> Implementing a teleport mechanic that sends the snake from one 
+        side of the grid to another.  
+        <br><strong>Outcome:</strong> Created a dedicated teleport method that inverts the snake’s 
+        coordinates upon hitting specific grid cells, adding an innovative twist to the classic game.
+      </li>
+      <li>
+        <strong>Challenge:</strong> Balancing obstacle placement and random food spawning.  
+        <br><strong>Outcome:</strong> Used checks to prevent food from spawning inside obstacles 
+        or on the snake, ensuring fair gameplay and consistent difficulty.
+      </li>
+    </ul>
+  </section>
+
+  <!-- GAMEPLAY INSTRUCTIONS SECTION (NEW) -->
+  <section id="instructions">
+    <h2>Gameplay Instructions</h2>
+    <p>
+      <strong>Controls:</strong>  
+      <ul>
+        <li><code>W</code>: Move Up</li>
+        <li><code>A</code>: Move Left</li>
+        <li><code>S</code>: Move Down</li>
+        <li><code>D</code>: Move Right</li>
+      </ul>
+    </p>
+    <p>
+      Press <code>Q</code> at any time to quit the game.
+    </p>
+    <p>
+      Your goal is to eat the <em>food</em> (<code>@</code>) and grow as large as possible without 
+      hitting walls or your own tail. Avoid obstacles (<code>%</code>) and use teleports 
+      (<code>O</code>) strategically to wrap around the board.
+    </p>
   </section>
 
   <!-- FEATURES SECTION -->
   <section id="features">
     <h2>Key Features</h2>
     <ul>
-      <li>Interactive Java console-based game.</li>
-      <li>Real-time snake movement and collision detection.</li>
-      <li>Dynamic food generation.</li>
+      <li>Responsive console-based gameplay with real-time movement.</li>
+      <li>Dynamic snake growth and collision detection.</li>
+      <li>Randomized food generation that rewards exploration.</li>
+      <li>Teleport mechanics that add a twist to the classic format.</li>
       <li>Score tracking and game over conditions.</li>
     </ul>
   </section>
@@ -46,7 +113,7 @@
         <img src="GitHub.png" alt="GitHub" class="tech-icon">
         <p>GitHub</p>
       </div>
-      <!-- Add more technologies as needed -->
+      <!-- Additional technologies or libraries could be listed here -->
     </div>
   </section>
 
@@ -54,7 +121,10 @@
   <section id="demo">
     <h2>Demo</h2>
     <img src="snake_game.png" alt="Snake Game Screenshot" class="project-image">
-    <p>Screenshot of the Snake Game in action.</p>
+    <p>
+      Here’s a snapshot of the Snake Game in action. For a quick demo or code walkthrough, 
+      check out the <a href="https://github.com/shazil343/snake-game" target="_blank">GitHub repository</a>.
+    </p>
   </section>
 
   <!-- LINKS SECTION -->
@@ -63,12 +133,15 @@
     <a href="https://github.com/shazil343/snake-game" target="_blank" class="btn">GitHub Repository</a>
   </section>
 
-     </section>
-
   <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out to me via email at <a href="mailto:shazil.khan@ucalgary.ca">shazil.khan@ucalgary.ca</a> or connect with me on <a href="https://www.linkedin.com/in/shazilfkhan" target="_blank">LinkedIn</a>.</p>
+    <p>
+      Have questions or suggestions? Feel free to reach out via email at 
+      <a href="mailto:shazil.khan@ucalgary.ca">shazil.khan@ucalgary.ca</a> or 
+      connect with me on 
+      <a href="https://www.linkedin.com/in/shazilfkhan" target="_blank">LinkedIn</a>.
+    </p>
   </section>
 
   <!-- FOOTER -->
